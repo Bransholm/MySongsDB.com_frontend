@@ -22,3 +22,36 @@ footer {
   font-weight: 1000;
   border-radius: 20px;
 }
+
+.grab-artists {
+  background-color: #660000;
+  letter-spacing: 1px;
+  font-weight: 1000;
+  color: darkkhaki;
+  border-radius: 25px;
+  padding: 5px;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 10px;
+}
+
+button {
+  background-color: #660000;
+  color: darkkhaki;
+  font-size: 14px;
+  text-align: center;
+  width: 120px;
+  padding: 4;
+  margin: 10px;
+  border-radius: 20px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+#filter-search {
+    letter-spacing: 1px;
+    font-weight: 1000;
+}

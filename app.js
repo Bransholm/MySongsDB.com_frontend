@@ -28,7 +28,7 @@ function showArtists(artists) {
         /*html*/
       
         `
-            <article>
+            <article class="grab-artists">
             <h3>${artist.artistName}</h3>
             <p>Birthdate: ${artist.birthdate}</p>
             <p>Active since: ${artist.activeSince}</p>

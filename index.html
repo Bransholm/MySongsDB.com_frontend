@@ -11,7 +11,19 @@
     <header>
         <h1>MySongsDB.com</h1>
     </header>
-    
+    <section id="filter-search">
+        <label for="options">Show:</label>
+        <select id="options">
+        <option value="artists" selected>Artists</option>
+        <option value="tracks">Tracks</option>
+        <option value="albums">Albums</option>
+    </select>
+
+        <input type="text" id="search" placeholder="Search...">
+        <button id="search-button">Search</button>
+
+    </section>
+
     <main>
         <section id="display-artists" class="grid-layout"></section>        
     </main>
