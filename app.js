@@ -1,17 +1,18 @@
 "use strict"
 
 const endpoint = "https://mysongsdbcombackend.azurewebsites.net";
+let filterValue = "artists";
 
 window.addEventListener("load", start);
 
 function start() {
     console.log("Hello Team10");
-    getArtists();
+    getArtists()
+    document.querySelector("#filter-search").addEventListener("change", filterContent);
 }
 
 async function getArtists() {
     const artists = await fetchArtists();
-    console.log(artists);
     showArtists(artists);
 }
 
@@ -22,7 +23,7 @@ async function fetchArtists() {
 }
 
 function showArtists(artists) {
-  //document.querySelector("#display-artists").innerHTML = "";
+  document.querySelector("#display-content").innerHTML = "";
   for (const artist of artists) {
     const html =
         /*html*/
@@ -36,6 +37,31 @@ function showArtists(artists) {
             <p>Artist ID: ${artist.artistID}</p>
             </article>
         `;
-    document.querySelector("#display-artists").insertAdjacentHTML("beforeend", html);
+    document.querySelector("#display-content").insertAdjacentHTML("beforeend", html);
   }
+}
+
+function filterContent(event) {
+    const value = event.target.value
+    if (value === "artists") {
+        getArtists();
+        filterValue = "artists";
+        console.log(filterValue);
+    } else if (value === "tracks") {
+        getTracks();
+        filterValue = "tracks";
+        console.log(filterValue);
+    } else if (value === "albums") {
+        getAlbums();
+        filterValue = "albums";
+        console.log(filterValue);
+    }
+}
+
+function getTracks() {
+    document.querySelector("#display-content").innerHTML = "Tracks";
+}
+
+function getAlbums() {
+    document.querySelector("#display-content").innerHTML = "Albums";    
 }
