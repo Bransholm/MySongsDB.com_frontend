@@ -58,10 +58,65 @@ function filterContent(event) {
     }
 }
 
-function getTracks() {
-    document.querySelector("#display-content").innerHTML = "Tracks";
+async function getTracks() {
+  const tracks = await fetchTracks();
+  showTracks(tracks);
 }
 
-function getAlbums() {
-    document.querySelector("#display-content").innerHTML = "Albums";    
+async function fetchTracks() {
+  const response = await fetch(`${endpoint}/tracks`);
+  const data = await response.json();
+  return data;
 }
+
+function showTracks(tracks) {
+  document.querySelector("#display-content").innerHTML = "";
+  for (const track of tracks) {
+    const html =
+      /*html*/
+
+      `
+            <article class="grab-artists">
+            <h3>${track.trackName}</h3>
+            <p>length in seconds: ${track.length}</p>
+            <p>Creation year: ${track.creationYear}</p>
+            <p>Genre: ${track.genre}</p>
+            <p>Track ID: ${track.trackID}</p>
+            </article>
+        `;
+    document.querySelector("#display-content").insertAdjacentHTML("beforeend", html);
+  }
+}
+
+////
+
+async function getAlbums() {
+  const albums = await fetchAlbums();
+  showAlbums(albums);
+}
+
+async function fetchAlbums() {
+  const response = await fetch(`${endpoint}/albums`);
+  const data = await response.json();
+  return data;
+}
+
+function showAlbums(albums) {
+  document.querySelector("#display-content").innerHTML = "";
+  for (const album of albums) {
+    const html =
+      /*html*/
+
+      `
+            <article class="grab-artists">
+            <h3>${album.albumName}</h3>
+            <p>Edition: ${album.edition}</p>
+            <p>Creation year: ${album.year}</p>
+            <p>Image: ${album.albumImage}</p>
+            <p>Album ID: ${album.albumID}</p>
+            </article>
+        `;
+    document.querySelector("#display-content").insertAdjacentHTML("beforeend", html);
+  }
+}
+
