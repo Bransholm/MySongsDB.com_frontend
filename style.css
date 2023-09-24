@@ -1,7 +1,25 @@
 /* CSS goes here */
 
 html {
-    background-color: darkgreen;
+    background-color: black;
     color: darkkhaki;
 
+}
+
+header {
+  background-color: #660000;
+  color: darkkhaki;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 1000;
+  border-radius: 20px;
+}
+
+footer {
+  background-color: #660000;
+  color: darkkhaki;
+  text-align: center;
+  letter-spacing: 10px;
+  font-weight: 1000;
+  border-radius: 20px;
 }
