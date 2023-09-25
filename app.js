@@ -184,10 +184,10 @@ function showSearchContent() {
             .insertAdjacentHTML("beforeend", html);
         }
     } else {
-        if (contentFromSearch.albums.length == 0) {
-          getAlbums();
-        }
-          document.querySelector("#display-content").innerHTML = "";
+      if (contentFromSearch.albums.length == 0) {
+        getAlbums();
+      } else {
+        document.querySelector("#display-content").innerHTML = "";
         document.querySelector("#search").value = "";
         console.log(contentFromSearch.albums.length);
         for (const album of contentFromSearch.albums) {
@@ -207,5 +207,6 @@ function showSearchContent() {
             .querySelector("#display-content")
             .insertAdjacentHTML("beforeend", html);
         }
+      }
     }
 }
