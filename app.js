@@ -146,6 +146,7 @@ function showSearchContent() {
         console.log("Empty search" );
     } else if (filterValue === "artist") {
         document.querySelector("#display-content").innerHTML = "";
+        document.querySelector("#search").value = "";
         for (const artist of contentFromSearch.artists) {
           const html =
             /*html*/
@@ -164,6 +165,7 @@ function showSearchContent() {
         }
     } else if (filterValue === "track") {
         document.querySelector("#display-content").innerHTML = "";
+        document.querySelector("#search").value = "";
         for (const track of contentFromSearch.tracks) {
           const html =
             /*html*/
@@ -182,7 +184,12 @@ function showSearchContent() {
             .insertAdjacentHTML("beforeend", html);
         }
     } else {
-        document.querySelector("#display-content").innerHTML = "";
+        if (contentFromSearch.albums.length == 0) {
+          getAlbums();
+        }
+          document.querySelector("#display-content").innerHTML = "";
+        document.querySelector("#search").value = "";
+        console.log(contentFromSearch.albums.length);
         for (const album of contentFromSearch.albums) {
           const html =
             /*html*/
