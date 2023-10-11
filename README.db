@@ -23,7 +23,7 @@ vindue åbner øjeblikkeligt.
 
 I browseren har brugeren mulighed for at søge i tre forskellige kategorier (filtre), og man kan også søge efter data
 
-Inde i mappen docs docs kan du finde vores pdf'er/dokumentation til vores UML diagrammer. 
+Inde i mappen docs kan du finde vores pdf'er/dokumentation til vores UML diagrammer. 
 Det er muligt at se pdf'erne i VSCode hvis man benytter sig af af følegnde extension 
 
 Name: vscode-pdf
@@ -34,7 +34,9 @@ Publisher: tomoki1207
 VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf:
 
 
-Koden er opsat efter generelle agile metoder, for at gøre koden overskuelig .
+
+
+Koden er opsat efter generelle agile metoder, for at gøre koden overskuelig.
 
 Dette er en opgave, som er lavet af Thomas, Lukas og Kenneth. Vi går under gruppenavnet "TEAM10"
 Formålet med denne frontend er at opfylde de krav vi blev stillet i den bundene forudsætnings 
