@@ -30,6 +30,7 @@ function showSearchContent() {
       document.querySelector("#display-content").innerHTML = "";
       clearSearchBar();
       console.log(contentFromSearch.albums.length);
+      
       newSearchResult.render(contentFromSearch.albums, AlbumRenderer);
     }
   }
