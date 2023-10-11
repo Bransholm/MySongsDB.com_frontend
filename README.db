@@ -5,9 +5,18 @@ Følegende er en gennemgang af hvordan man kører vores frontend.
 Vi har deployed vores frontend ved hjælp af Azure/Github Pages.
 Alt data hentes fra vores MySQL-database via vores endpoint.
 
-Følg dette link:
+Dette er et URL til databasen på Azure: jdbc:mysql://gormserver.mysql.database.azure.com:3306/music_db
+
+Databasen er hosted via AZURE Mysql flexible database. 
+
+Vores backend kan findes her: https://github.com/Bransholm/MySongsDB.com_backend
+Server backend: https://mysongsdbcombackend.azurewebsites.net
+
+Følg dette link for at åbne frontend i browseren:
 
 https://bransholm.github.io/MySongsDB.com_frontend/
+
+
 
 I tilfældet af at der er problemer er det muligt at bruge en live-server
 
@@ -17,6 +26,8 @@ kaldet "Live Server." Tryk på udvidelser og indsæt følgende i søgefeltet: "r
 Dette er ID'et til den korrekte udvidelse.
 
 Højreklik på index.html-filen og vælg muligheden "Åbn med Live Server."
+
+
 
 Eventuelt kan man bruge genvejene Alt+L og Alt+O, hvorefter et browser-
 vindue åbner øjeblikkeligt.
@@ -33,10 +44,6 @@ Version: 1.2.2
 Publisher: tomoki1207
 VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf:
 
-
-
-
-Koden er opsat efter generelle agile metoder, for at gøre koden overskuelig.
 
 Dette er en opgave, som er lavet af Thomas, Lukas og Kenneth. Vi går under gruppenavnet "TEAM10"
 Formålet med denne frontend er at opfylde de krav vi blev stillet i den bundene forudsætnings 
