@@ -5,6 +5,12 @@ Følegende er en gennemgang af hvordan man kører vores frontend.
 Vi har deployed vores frontend ved hjælp af Azure/Github Pages.
 Alt data hentes fra vores MySQL-database via vores endpoint.
 
+Følg dette link:
+
+https://bransholm.github.io/MySongsDB.com_frontend/
+
+I tilfældet af at der er problemer er det muligt at bruge en live-server
+
 For at tilgå hjemmesiden skal man blot åbne en live-server.
 For at åbne live-serveren skal man først downloade VSCode-udvidelsen
 kaldet "Live Server." Tryk på udvidelser og indsæt følgende i søgefeltet: "ritwickdey.LiveServer."
@@ -17,8 +23,22 @@ vindue åbner øjeblikkeligt.
 
 I browseren har brugeren mulighed for at søge i tre forskellige kategorier (filtre), og man kan også søge efter data
 
-Dette er en opgave, som er lavet af Thomas, Lukas og Kenneth. Vi går under gruppenavnet "TEAM10"
+Inde i mappen docs docs kan du finde vores pdf'er/dokumentation til vores UML diagrammer. 
+Det er muligt at se pdf'erne i VSCode hvis man benytter sig af af følegnde extension 
 
+Name: vscode-pdf
+Id: tomoki1207.pdf
+Description: Display pdf file in VSCode.
+Version: 1.2.2
+Publisher: tomoki1207
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf:
+
+
+Koden er opsat efter generelle agile metoder, for at gøre koden overskuelig .
+
+Dette er en opgave, som er lavet af Thomas, Lukas og Kenneth. Vi går under gruppenavnet "TEAM10"
+Formålet med denne frontend er at opfylde de krav vi blev stillet i den bundene forudsætnings 
+opgave "OOP"
 
 
 
