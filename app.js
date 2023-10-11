@@ -11,6 +11,7 @@ import {
   fetchAlbums,
   fetchSearchContent,
 } from "./fetchData.js";
+import { artistConstructor } from "./artistsClass.js";
 
 const endpoint = "https://mysongsdbcombackend.azurewebsites.net";
 let filterValue = "artist";
@@ -35,12 +36,22 @@ function start() {
 async function getArtists() {
   const artists = await fetchArtists();
   console.log(artists);
-  showArtists(artists);
+  createArtistObjectArray(artists);
+  // showArtists(artists);
 }
 
 function showArtists(artists) {
   const artistELement = new ListRenderer();
   artistELement.render(artists, AritstRenderer);
+}
+
+function createArtistObjectArray(artists) {
+  const newArtistsArray = [];
+  for (const artist of artists) {
+    const artistObject = new artistConstructor(artist);
+    newArtistsArray.push(artistObject);
+  }
+  showArtists(newArtistsArray);
 }
 
 // Filter functionality
