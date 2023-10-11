@@ -1,13 +1,18 @@
-class artist {
+export class artistConstructor {
   constructor(artist) {
-    this.namartistNamee = artist.artistName;
+    this.artistName = artist.artistName;
     this.birthdate = new Date(artist.birthdate);
     this.activeSince = artist.activeSince;
     this.artistImage = artist.artistImage;
     this.artistID = artist.artistID;
   }
-  
-  // set birthdate(){
-  // }
 
+  setBirthdate() {
+    const date = this.birthday;
+    const formatedDate = new Intl.DateTimeFormat("en", {
+      dateStyle: "medium",
+    }).format(date);
+
+    return formatedDate.toLocaleString();
+  }
 }

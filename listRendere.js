@@ -8,11 +8,11 @@ export class ListRenderer {
   //   this.table.innerHTML = "";
   // }
 
-  render(data, rendereToCall) {
+  render(dataList, renderer) {
     this.table.innerHTML = "";
 
-    for (const element of data) {
-      const newRender = new rendereToCall();
+    for (const element of dataList) {
+      const newRender = new renderer();
       const htmlElement = newRender.render(element);
 
       console.log(htmlElement);
