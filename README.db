@@ -1,1 +1,24 @@
-//To be updated
+-- Velkommen -- 
+
+Følegende er en gennemgang af hvordan man kører vores frontend.
+
+Vi har deployed vores frontend ved hjælp af Azure/Github Pages.
+Alt data hentes fra vores MySQL-database via vores endpoint.
+
+For at tilgå hjemmesiden skal man blot åbne en live-server.
+For at åbne live-serveren skal man først downloade VSCode-udvidelsen
+kaldet "Live Server." Tryk på udvidelser og indsæt følgende i søgefeltet: "ritwickdey.LiveServer."
+Dette er ID'et til den korrekte udvidelse.
+
+Højreklik på index.html-filen og vælg muligheden "Åbn med Live Server."
+
+Eventuelt kan man bruge genvejene Alt+L og Alt+O, hvorefter et browser-
+vindue åbner øjeblikkeligt.
+
+I browseren har brugeren mulighed for at søge i tre forskellige kategorier (filtre), og man kan også søge efter data
+
+Dette er en opgave, som er lavet af Thomas, Lukas og Kenneth. Vi går under gruppenavnet "TEAM10"
+
+
+
+
