@@ -7,7 +7,7 @@ class AritstRenderer {
       `
             <article class="grab-artists">
             <h3>${artist.artistName}</h3>
-            <img src="../img/artist.png" alt="${artist.artistName}">
+            <img src="./img/artist.png" alt="${artist.artistName}">
             <p>Birthdate: ${artist.setBirthdate(artist.birthdate)}</p>
             <p>Active since: ${artist.activeSince}</p>
             <p>Image: ${artist.artistImage}</p>
