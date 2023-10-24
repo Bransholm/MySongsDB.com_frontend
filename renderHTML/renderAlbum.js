@@ -9,7 +9,6 @@ class AlbumRenderer {
             <img src="./img/album.png" alt="" width="260px" />
             <p>Edition: ${album.edition}</p>
             <p>Creation year: ${album.year}</p>
-            <p>Image: ${album.albumImage}</p>
             <p>Album ID: ${album.albumID}</p>
             </article>
         `;

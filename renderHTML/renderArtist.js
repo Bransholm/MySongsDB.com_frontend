@@ -10,7 +10,6 @@ class AritstRenderer {
             <img src="./img/artist.png" alt="" width="260px" />
             <p>Birthdate: ${artist.setBirthdate(artist.birthdate)}</p>
             <p>Active since: ${artist.activeSince}</p>
-            <p>Image: ${artist.artistImage}</p>
             <p>Artist ID: ${artist.artistID}</p>
             </article>
         `;
