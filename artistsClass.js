@@ -8,7 +8,7 @@ export class artistConstructor {
   }
 
   setBirthdate() {
-    const date = this.birthday;
+    const date = this.birthdate;
     const formatedDate = new Intl.DateTimeFormat("en", {
       dateStyle: "medium",
     }).format(date);
