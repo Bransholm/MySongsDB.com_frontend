@@ -40,18 +40,23 @@ async function getArtists() {
   // showArtists(artists);
 }
 
-function showArtists(artists) {
-  const artistELement = new ListRenderer();
-  artistELement.render(artists, AritstRenderer);
-}
 
 function createArtistObjectArray(artists) {
+  
   const newArtistsArray = [];
+  
   for (const artist of artists) {
     const artistObject = new artistConstructor(artist);
     newArtistsArray.push(artistObject);
   }
   showArtists(newArtistsArray);
+
+}
+
+
+function showArtists(artists) {
+  const artistELement = new ListRenderer();
+  artistELement.render(artists, AritstRenderer);
 }
 
 // Filter functionality

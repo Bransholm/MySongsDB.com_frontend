@@ -1,6 +1,10 @@
 class AritstRenderer {
   render(artist) {
-    console.log(artist);
+    console.log(
+      "Artist for rendering: ",
+      artist.setBirthdate(artist.birthdate)
+    );
+
     const html =
       /*html*/
 
@@ -19,3 +23,5 @@ class AritstRenderer {
 }
 
 export { AritstRenderer };
+
+//;
